@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Me Quer - Aluguel de Colchões com Enxoval em Curitiba</title>
+    <meta name="description" content="Aluguel de colchões e enxoval completo em Curitiba. Lençol 180 fios, travesseiro, toalha, manta. Tudo higienizado. Entrega rápida. WhatsApp 41 98852-6958">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3a66 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c5aa0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: #22c55e;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-icon {
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .services {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 60px;
+            color: #2c5aa0;
+            font-weight: 700;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .service-card {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            border-color: #2c5aa0;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(44, 90, 160, 0.1);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: #2c5aa0;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #2c5aa0;
+        }
+        
+        .gallery {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .benefits {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .benefit-icon {
+            color: #2c5aa0;
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3a66 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background: #1e3a66;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #22c55e;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5541988526958?text=Oi%2C%20vi%20seu%20an%C3%BAncio%20no%20Google%20e%20quero%20saber%20mais%20sobre%20o%20aluguel%20de%20colch%C3%B5es" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+        <span class="whatsapp-icon">📱</span>
+    </a>
+
+    <header>
+        <div class="container">
+            <div class="logo">BMQ</div>
+            <h1>Bem Me Quer - Aluguel de Colchões com Enxoval</h1>
+            <p class="subtitle">Alugamos colchões e enxoval completo em Curitiba e região. Lençol branco 180 fios, travesseiro, toalha, manta e kit cama. Tudo higienizado e embalado. Entrega rápida e atendimento direto pelo WhatsApp.</p>
+            <a href="https://wa.me/5541988526958?text=Oi%2C%20vi%20seu%20an%C3%BAncio%20no%20Google%20e%20quero%20saber%20mais%20sobre%20o%20aluguel%20de%20colch%C3%B5es" class="cta-button" target="_blank">
+                <span class="whatsapp-icon">📱</span>
+                Fale com a Bem Me Quer no WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛏️</div>
+                    <h3>Aluguel de Colchões</h3>
+                    <p>Colchões de qualidade para eventos, hospedagens temporárias, visitas em casa e retiros. Diversos tamanhos disponíveis.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Kit Enxoval Completo</h3>
+                    <p>Lençol branco 180 fios, travesseiro, toalha de banho, manta e kit cama. Tudo separadamente ou em conjunto.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Entregamos em Curitiba e região metropolitana. Logística eficiente para eventos e necessidades urgentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Nossa Qualidade em Imagens</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRjVGNUY1Ii8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzJDNUFBMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxyZWN0IHg9IjgwIiB5PSI4MCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSI5MCIgZmlsbD0iIzJDNUFBMCIgb3BhY2l0eT0iMC4xIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMyQzVBQTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNvbGNow7VlcyBPcmdhbml6YWRvczwvdGV4dD4KPC9zdmc+" alt="Colchões organizados em quartos">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRjhGOUZBIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzI1RDM2NiIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxyZWN0IHg9IjcwIiB5PSI3MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjMjVEMzY2IiBvcGFjaXR5PSIwLjMiLz4KPHJlY3QgeD0iMTQwIiB5PSI3MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMyNUQzNjYiLz4KPHJlY3QgeD0iMjEwIiB5PSI3MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjMkM1QUEwIiBvcGFjaXR5PSIwLjMiLz4KPHJlY3QgeD0iMjgwIiB5PSI3MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMyQzVBQTAiLz4KPHR5cGUgeD0iMjAwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzI1RDM2NiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S2l0IEVueG92YWwgQ29tcGxldG88L3R5cGU+CjwvdGV4dD4KPC9zdmc+" alt="Kit enxoval completo">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRjVGNUY1Ii8+CjxyZWN0IHg9IjMwIiB5PSI0MCIgd2lkdGg9IjM0MCIgaGVpZ2h0PSIxNzAiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzJDNUFBMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iMjAiIGZpbGw9IiMyQzVBQTAiIG9wYWNpdHk9IjAuMyIvPgo8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxMDAiIHI9IjIwIiBmaWxsPSIjMkM1QUEwIiBvcGFjaXR5PSIwLjMiLz4KPGNpcmNsZSBjeD0iMzAwIiBjeT0iMTAwIiByPSIyMCIgZmlsbD0iIzJDNUFBMCIgb3BhY2l0eT0iMC4zIi8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiMyQzVBQTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkV2ZW50b3MgZSBSZXRpcm9zPC90ZXh0Pgo8L3N2Zz4=" alt="Eventos e retiros">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDQwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiBmaWxsPSIjRjhGOUZBIi8+CjxyZWN0IHg9IjEwMCIgeT0iNTAiIHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjMjVEMzY2IiBvcGFjaXR5PSIwLjIiLz4KPHJlY3QgeD0iMTIwIiB5PSI3MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI2MCIgZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMjVEMzY2IiBzdHJva2Utd2lkdGg9IjIiLz4KPHR5cGUgeD0iMjAwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzI1RDM2NiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+agiBFbnRyZWdhPC90eXBlPgo8dGV4dCB4PSIyMDAiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjMjVEMzY2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FbnRyZWdhIFLDoXBpZGE8L3RleHQ+Cjwvc3ZnPg==" alt="Entrega rápida">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Por que Escolher a Bem Me Quer?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">✨</div>
+                    <div>
+                        <h4>Higiene Garantida</h4>
+                        <p>Todos os itens são higienizados e embalados</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📱</div>
+                    <div>
+                        <h4>Atendimento Direto</h4>
+                        <p>WhatsApp para facilitar seu pedido</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🚚</div>
+                    <div>
+                        <h4>Entrega Rápida</h4>
+                        <p>Curitiba e região metropolitana</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <div>
+                        <h4>Preço Justo</h4>
+                        <p>Economia sem abrir mão da qualidade</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🏆</div>
+                    <div>
+                        <h4>Qualidade Premium</h4>
+                        <p>Lençol 180 fios e produtos selecionados</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📋</div>
+                    <div>
+                        <h4>Locação Flexível</h4>
+                        <p>Colchões e enxoval separadamente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para Alugar?</h2>
+            <p>Fale conosco agora pelo WhatsApp e faça seu orçamento sem compromisso!</p>
+            <a href="https://wa.me/5541988526958?text=Oi%2C%20vi%20seu%20an%C3%BAncio%20no%20Google%20e%20quero%20saber%20mais%20sobre%20o%20aluguel%20de%20colch%C3%B5es" class="cta-button" target="_blank">
+                <span class="whatsapp-icon">📱</span>
+                Fale com a Bem Me Quer no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>(41) 98852-6958</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Curitiba e Região Metropolitana</span>
+                </div>
+                <div class="contact-item">
+                    <span>⏰</span>
+                    <span>Atendimento via WhatsApp</span>
+                </div>
+            </div>
+            <p>&copy; 2025 Bem Me Quer - Aluguel de Colchões e Enxoval. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
